@@ -1,0 +1,6 @@
+#! /bin/sh
+docker run -it --rm -v ${PWD}:/home/algorithm -w /home/algorithm/source/algorithmservice alpine:3.9.4  sh -c "sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/' /etc/apk/repositories && echo 'http://mirrors.aliyun.com/alpine/edge/testing' >> /etc/apk/repositories && apk update && apk add --no-cache make libexecinfo-dev util-linux-dev g++ ca-certificates tzdata boost-thread boost-system libstdc++ boost-filesystem freetype libtbb g++ apr-util libcurl mesa-osmesa mesa-gl glu libunwind openssl-dev libxslt docbook-xsl boost boost-dev libpng curl curl-dev libcurl && make clean && make -j8"
+rsync -avz --delete --exclude=algorithmservice.conf --exclude=tmp --exclude=new_save --exclude=download --exclude=to_upload --exclude=run.sh --exclude=logs bin/ root@47.97.188.119:/home/shining3d/app/algorithm/
+ssh root@47.97.188.119 docker restart algorithmservice
+rsync -avz --delete --exclude=algorithmservice.conf --exclude=tmp --exclude=new_save --exclude=download --exclude=to_upload --exclude=run.sh --exclude=logs bin/ root@47.254.36.137:/home/shining3d/app/algorithm/
+ssh root@47.254.36.137 docker restart algorithmservice

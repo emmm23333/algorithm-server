@@ -1,0 +1,22 @@
+# ---> VisualStudioCode
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.DS_Store
+
+# Binaries for programs and libraries
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.o
+
+# logs
+*log
+externals/
+bin/
+history
