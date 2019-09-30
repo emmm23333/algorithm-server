@@ -17,6 +17,8 @@
 
 # logs
 *log
-externals/
+externals/AlgorithmThird
+externals/SnUtils
+externals/mosquitto-master
 bin/
 history
