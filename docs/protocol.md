@@ -203,19 +203,19 @@ ClientId: uuid
 		},
 		"oss":{
 			"t-3data":{
-				"endpoint": "https://oss-us-west-1.aliyuncs.com",
-				"accessKey": "LTAIk5l3xtfcuZWN",
-				"accessSecret": "tLhxZTvhknHBjc62FqT2QONoj15wfG"
+				"endpoint": "",
+				"accessKey": "",
+				"accessSecret": ""
 			},
 			"t-3datahz":{
-				"endpoint": "https://oss-cn-hangzhou.aliyuncs.com",
-				"accessKey": "LTAIk5l3xtfcuZWN",
-				"accessSecret": "tLhxZTvhknHBjc62FqT2QONoj15wfG"
+				"endpoint": "",
+				"accessKey": "",
+				"accessSecret": ""
 			},
 			"t-pub":{
-				"endpoint": "https://oss-us-west-1.aliyuncs.com",
-				"accessKey": "LTAIk5l3xtfcuZWN",
-				"accessSecret": "tLhxZTvhknHBjc62FqT2QONoj15wfG"
+				"endpoint": "",
+				"accessKey": "",
+				"accessSecret": ""
 			}
 		}
 	},
